@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>OWAS - Sistema de Avaliação de Posturas</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>OWAS - Sistema de Avaliação de Posturas</h1>
+    <form>
+        <label for="postura-costas">Postura das Costas:</label>
+        <select id="postura-costas" name="postura-costas">
+            <option value="1">1. Ereta</option>
+            <option value="2">2. Inclinada</option>
+            <option value="3">3. Ereta e torcida</option>
+            <option value="4">4. Inclinada e torcida</option>
+        </select><br><br>
+        
+        <label for="postura-bracos">Postura dos Braços:</label>
+        <select id="postura-bracos" name="postura-bracos">
+            <option value="1">1. Dois baixos abaixo dos ombros</option>
+            <option value="2">2. Um braço no nível ou acima dos ombros</option>
+            <option value="3">3. Ambos os braços no nível acima dos ombros</option>
+        </select><br><br>
+        
+        <label for="postura-pernas">Postura das Pernas:</label>
+        <select id="postura-pernas" name="postura-pernas">
+            <option value="1">1. Sentado</option>
+            <option value="2">2. De pé com ambas as pernas esticadas</option>
+            <option value="3">3. De pé com o peso de uma das pernas esticadas</option>
+            <option value="4">4. De pé ou agachado com ambos os joelhos flexionados</option>
+            <option value="5">5. De pé ou agachado com um dos joelhos dobrados</option>
+            <option value="6">6. Ajoelhado em um ou ambos os joelhos</option>
+            <option value="7">7. Andando ou se movendo</option>
+        </select><br><br>
+        
+        <label for="esforco">Esforço:</label>
+        <select id="esforco" name="esforco">
+            <option value="1">1. Peso ou força necessária igual ou menor que 10kg</option>
+            <option value="2">2. Peso ou força necessário maior que 10kg e menor que 20kg</option>
+            <option value="3">3. Peso ou força excede 30kg</option>
+        </select><br><br>
+        
+        <button type="button" onclick="calcularRisco()">Calcular Risco</button>
+    </form>
+    
+    <br>
+    
+    <div id="resultado"></div>
+    
+</body>
+</html>
